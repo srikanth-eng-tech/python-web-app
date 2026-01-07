@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Web App</title>
+</head>
+<body>
+    <h2>Enter Text</h2>
+
+    <form method="post" action="/process">
+        <input type="text" name="text" required>
+        <button type="submit">Process</button>
+    </form>
+
+    {% if result %}
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
